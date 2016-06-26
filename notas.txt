@@ -1,3 +1,6 @@
 
 Biblioteca para fazer as parada funcionar
 pip install scikit-learn
+
+# http://pandas.pydata.org/
+pip install pandas --upgrade
