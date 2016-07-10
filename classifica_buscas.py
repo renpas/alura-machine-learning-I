@@ -33,8 +33,11 @@ teste_marcacoes  = Y[-tamanho_de_teste:]
 
 
 
-from sklearn.naive_bayes import MultinomialNB
-modelo = MultinomialNB()
+#from sklearn.naive_bayes import MultinomialNB
+#modelo = MultinomialNB()
+
+from sklearn.ensemble import AdaBoostClassifier
+modelo = AdaBoostClassifier()
 modelo.fit(treino_dados, treino_marcacoes)
 
 resultado = modelo.predict(teste_dados)
